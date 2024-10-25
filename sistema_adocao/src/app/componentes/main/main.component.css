@@ -1,4 +1,4 @@
-.hero {
+.main {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,7 +12,7 @@
     align-items: center;
   }
 
-  .hero-text {
+  .main-text {
     max-width: 600px;
 
     h1 {
@@ -33,13 +33,13 @@
       color: #555;
     }
 
-    .hero-buttons {
+    .main-buttons {
       display: flex;
       gap: 1rem;
     }
   }
 
-  .hero-image {
+  .main-image {
     flex: 1;
 
     img {
@@ -57,7 +57,7 @@
       flex-direction: column;
     }
 
-    .hero-text {
+    .main-text {
       h1 {
         font-size: 2rem;
       }

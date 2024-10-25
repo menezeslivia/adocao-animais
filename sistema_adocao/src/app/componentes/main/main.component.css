@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem;
-  background-color: #fef7e6;
+  background-color: #ffffff;
 
   .container {
     display: flex;
@@ -11,14 +11,13 @@
     gap: 2rem;
     align-items: center;
   }
-
   .main-text {
     max-width: 600px;
 
-    h1 {
+    h2 {
       font-size: 2.5rem;
       font-weight: 700;
-      color: #333;
+      color: #181E4B;
       margin-bottom: 1rem;
 
       .highlight {
@@ -30,7 +29,8 @@
     p {
       font-size: 1rem;
       margin-bottom: 2rem;
-      color: #555;
+      color: #5E6282;
+      font-family: 'Poppins', sans-serif;
     }
 
     .main-buttons {
@@ -58,7 +58,7 @@
     }
 
     .main-text {
-      h1 {
+      h2 {
         font-size: 2rem;
       }
     }

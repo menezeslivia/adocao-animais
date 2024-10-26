@@ -3,12 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import {CabecalhoComponent} from './componentes/cabecalho/cabecalho.component';
 import {MainComponent} from './componentes/main/main.component';
 import {ButtonComponent} from './componentes/button/button.component';
-import {BackgroundComponent} from './componentes/background/background.component';
+// import {BackgroundComponent} from './componentes/background/background.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CabecalhoComponent, MainComponent, ButtonComponent, BackgroundComponent],
+  imports: [RouterOutlet, CabecalhoComponent, MainComponent, ButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

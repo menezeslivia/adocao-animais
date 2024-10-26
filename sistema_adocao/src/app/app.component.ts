@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import {CabecalhoComponent} from './componentes/cabecalho/cabecalho.component';
 import {MainComponent} from './componentes/main/main.component';
 import {ButtonComponent} from './componentes/button/button.component';
+// import {BackgroundComponent} from './componentes/background/background.component';
 
 @Component({
   selector: 'app-root',

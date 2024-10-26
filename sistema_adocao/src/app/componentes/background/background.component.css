@@ -1,0 +1,22 @@
+.background {
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgba(255,229,195,1) 100%);
+  position: relative;
+}
+
+.shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  background: #fff7e6;
+  border-radius: 0 0 70% 70%;
+  transform: rotate(15deg);
+}
+
+@media only screen and (max-width: 1388px) {
+  .shape {
+    opacity: 0;
+  }
+}

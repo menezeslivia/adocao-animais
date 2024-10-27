@@ -25,7 +25,7 @@ export class AnimaisComponent {
       especie: 'Cachorro',
       idade: '2 anos',
       local: 'Recife, PE',
-      descricao: 'Melissa é uma gata calma e reservada, mas adora um carinho quando se sente à vontade. Infelizmente, preciso viajar para longe e não conseguirei levar ela. Ela será uma companheira amorosa e independente para quem puder lhe oferecer um novo lar. 🐾'
+      descricao: 'Melissa é uma gata calma e reservada, mas adora um carinho quando se sente à vontade. Infelizmente, preciso viajar para longe e não conseguirei levar ela. Ela será uma companheira amorosa e independente para quem puder lhe oferecer um novo lar.🐾'
     },
     {
       imageUrl: './assets/cat2-image.png',

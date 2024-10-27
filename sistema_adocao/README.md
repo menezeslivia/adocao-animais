@@ -1,27 +1,89 @@
-# SistemaAdocao
+# Site de Adoção de Animais 🐾
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+Este projeto foi desenvolvido como parte de uma residência para criar uma aplicação web de adoção de animais. A aplicação se destina apenas ao front-end, sem integração com um backend ou banco de dados, permitindo que ONGs registrem animais e que visitantes consultem esses dados e realizem solicitações de adoção.
 
-## Development server
+## 🎯 Objetivo do Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Desenvolver uma plataforma de adoção de animais onde ONGs possam cadastrar e gerenciar animais disponíveis para adoção, e visitantes possam consultar esses dados, visualizar os detalhes dos animais e fazer solicitações de adoção.
 
-## Code scaffolding
+## 🚀 Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Estruturação do front-end com criação de componentes reutilizáveis, roteamento e gerenciamento de estado.
+- **TypeScript**: Tipagem estática e melhor controle de dados e funcionalidades.
+- **HTML e CSS**: Estruturação e estilização das páginas com design responsivo.
+- **Bootstrap**: Framework para criação de layouts e componentes responsivos.
+- **Node.js**: Servidor local para desenvolvimento do front-end.
 
-## Build
+## 📋 Estrutura do Projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Telas
 
-## Running unit tests
+A aplicação é composta pelas seguintes telas:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Tela de Login**
+   - **Para ONG**: Contém campos de e-mail e senha, com os botões "Entrar", "Esqueci minha senha" e "Registrar-se".
+   - **Para Adotante**: Contém campos de e-mail e senha, com os botões "Entrar", "Esqueci minha senha" e "Registrar-se".
 
-## Running end-to-end tests
+2. **Tela de Registro**
+   - **Para ONG**: Formulário para cadastro com os campos nome da ONG, CNPJ, e-mail, senha e confirmar senha. Botão "Registrar".
+   - **Para Adotante**: Formulário para cadastro com os campos nome, CPF, e-mail, senha e confirmar senha. Botão "Registrar".
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Tela de Cadastro de Animais** (ONG apenas)
+   - Formulário para cadastramento de animais, incluindo campos para nome, idade, raça, espécie, descrição, status, e upload de fotos. Botão "Cadastrar".
 
-## Further help
+4. **Tela de Listagem de Animais**
+   - Exibe uma lista de animais com foto, nome, raça e status. Inclui filtros para espécie, raça e idade, com botões "Ver detalhes" e "Filtrar".
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+5. **Tela de Detalhes do Animal**
+   - Exibe informações detalhadas sobre o animal, incluindo fotos e descrição. Contém botões para "Solicitar Adoção" (disponível para adotantes), "Remover" e "Editar" (visíveis apenas para ONGs).
+
+6. **Tela de Solicitação de Adoção** (adotante)
+   - Modal acionado a partir da tela de detalhes do animal, contendo um formulário com campos de nome, e-mail e mensagem, além do botão "Enviar".
+
+7. **Tela de Perfil da ONG**
+   - Lista todos os animais cadastrados pela ONG, com opções para editar ou remover cada animal. Possui botões para "Adicionar Animal", "Editar" e "Remover".
+
+### Backlog do Produto
+
+O backlog do projeto é dividido em três épicos principais, cada um com funcionalidades específicas:
+
+1. **Gerenciamento de Animais**: Inclui o cadastro, listagem, exibição de detalhes, atualização e remoção de animais. Esse épico permite que ONGs gerenciem os animais para adoção, garantindo que as informações estejam sempre disponíveis e atualizadas para os adotantes.
+
+2. **Autenticação e Gerenciamento de ONG**: Abrange as funcionalidades de registro, login e acesso para ONGs, permitindo que elas gerenciem seus perfis e os animais sob seus cuidados.
+
+3. **Adoção de Animais**: Focado em facilitar a interação dos adotantes com o sistema, permitindo que eles solicitem a adoção de animais e iniciem o contato com as ONGs.
+
+## 🌐 Estrutura de Componentes
+
+Os principais componentes do Angular são organizados para cada funcionalidade:
+
+- **LoginComponent**: Tela de login.
+- **RegisterComponent**: Tela de registro.
+- **AnimalListComponent**: Exibe a lista de animais.
+- **AnimalDetailsComponent**: Mostra detalhes do animal.
+- **AnimalFormComponent**: Formulário para cadastrar e editar.
+- **AdoptionRequestComponent**: Modal de solicitação de adoção.
+
+## 🛠️ Como Rodar o Projeto Localmente
+
+1. Clone o repositório:
+   ```bash
+   git clone (https://github.com/menezeslivia/adocao-animais.git)
+
+2. Navegue até a pasta do projeto:
+   
+  cd adocao-animais
+
+3. Instale as dependências:
+
+  npm install
+
+4. Inicie o servidor local:
+
+  ng serve
+
+5. Acesse no navegador:
+
+  http://localhost:4200
+
+

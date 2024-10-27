@@ -2,10 +2,12 @@
   <img src="{{ imageUrl }}" class="card-img-top" alt="Imagem do animal">
   <div class="card-body">
     <h5 class="card-title">{{ nome }}</h5>
-    <p class="badge bg-light text-dark">{{ especie }}</p>
-    <p class="badge bg-light text-dark">{{ idade }}</p>
-    <p class="badge bg-light text-dark">{{ local }}</p>
+    <div class="d-flex justify-content-center mb-3">
+      <p class="badge rounded-pill custom-badge mx-1">{{ especie }}</p>
+      <p class="badge rounded-pill custom-badge mx-1">{{ idade }}</p>
+      <p class="badge rounded-pill custom-badge mx-1">{{ local }}</p>
+    </div>
     <p class="card-text">{{ descricao }}</p>
-    <button class="btn btn-dark w-100">Fale com o tutor</button>
+    <button class="btn w-90">Fale com o tutor</button>
   </div>
 </div>

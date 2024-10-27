@@ -69,21 +69,21 @@ Os principais componentes do Angular são organizados para cada funcionalidade:
 1. Clone o repositório:
    ```bash
    git clone (https://github.com/menezeslivia/adocao-animais.git)
-
+   ```
 2. Navegue até a pasta do projeto:
-   
+  ```bash
   cd adocao-animais
-
+  ```
 3. Instale as dependências:
-
+  ```bash
   npm install
-
+  ```
 4. Inicie o servidor local:
-
+ ```bash
   ng serve
-
+  ```
 5. Acesse no navegador:
-
+  ```bash
   http://localhost:4200
-
+  ```
 

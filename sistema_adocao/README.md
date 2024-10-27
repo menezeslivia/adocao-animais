@@ -1,6 +1,6 @@
 # Site de Adoção de Animais 🐾
 
-Este projeto foi desenvolvido como parte de uma residência para criar uma aplicação web de adoção de animais. A aplicação se destina apenas ao front-end, sem integração com um backend ou banco de dados, permitindo que ONGs registrem animais e que visitantes consultem esses dados e realizem solicitações de adoção.
+Este projeto foi desenvolvido como parte de uma residência tecnológica do Embarque Digital para a empresa SERPRO, em que tivemos que criar uma aplicação web de adoção de animais. A aplicação se destina apenas ao front-end, sem integração com um backend ou banco de dados, permitindo que ONGs registrem animais e que visitantes consultem esses dados e realizem solicitações de adoção.
 
 ## 🎯 Objetivo do Projeto
 

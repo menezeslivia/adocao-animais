@@ -44,24 +44,17 @@
   bottom: 0;
   max-width: 300px;
   width: 50%;
+  display: block;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1280px) {
   .content-section {
     flex-direction: column;
   }
 
   .cat-image {
-    position: relative;
-    right: 0;
-    margin-top: 1rem;
-    width: 60%;
-    max-width: 300px;
+    display: none;
   }
+
 }
 
-@media only screen and (max-width: 1388px) {
-  .cat-image {
-    opacity: 0;
-  }
-}

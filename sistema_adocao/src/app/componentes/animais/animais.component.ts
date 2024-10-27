@@ -17,7 +17,7 @@ export class AnimaisComponent {
       especie: 'Gata',
       idade: '1 ano',
       local: 'Prazeres, Jaboatão',
-      descricao: 'Melissa é uma gata calma e reservada, mas adora um carinho...'
+      descricao: 'Melissa é uma gata calma e reservada, mas adora um carinho quando se sente à vontade. Infelizmente, preciso viajar para longe e não conseguirei levar ela. Ela será uma companheira amorosa e independente para quem puder lhe oferecer um novo lar. 🐾'
     },
     {
       imageUrl: './assets/dog2-image.png',
@@ -25,7 +25,7 @@ export class AnimaisComponent {
       especie: 'Cachorro',
       idade: '2 anos',
       local: 'Recife, PE',
-      descricao: 'Toby é um cachorro muito alegre e cheio de energia...'
+      descricao: 'Melissa é uma gata calma e reservada, mas adora um carinho quando se sente à vontade. Infelizmente, preciso viajar para longe e não conseguirei levar ela. Ela será uma companheira amorosa e independente para quem puder lhe oferecer um novo lar. 🐾'
     },
     {
       imageUrl: './assets/cat2-image.png',
@@ -33,7 +33,7 @@ export class AnimaisComponent {
       especie: 'Gata',
       idade: '3 anos',
       local: 'Olinda, PE',
-      descricao: 'Bella é muito amigável e adora brincar com crianças...'
+      descricao: 'Melissa é uma gata calma e reservada, mas adora um carinho quando se sente à vontade. Infelizmente, preciso viajar para longe e não conseguirei levar ela. Ela será uma companheira amorosa e independente para quem puder lhe oferecer um novo lar. 🐾'
     }
   ];
 }

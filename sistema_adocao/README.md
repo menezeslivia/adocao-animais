@@ -1,6 +1,6 @@
 # Site de Adoção de Animais 🐾
 
-Este projeto foi desenvolvido como parte de uma residência tecnológica do Embarque Digital para a empresa SERPRO, em que tivemos que criar uma aplicação web de adoção de animais. A aplicação se destina apenas ao front-end, sem integração com um backend ou banco de dados, permitindo que ONGs registrem animais e que visitantes consultem esses dados e realizem solicitações de adoção.
+Este projeto foi desenvolvido como parte da residência tecnológica do Embarque Digital para a empresa SERPRO, em que tivemos que criar uma aplicação web de adoção de animais. A aplicação se destina apenas ao front-end, sem integração com um backend ou banco de dados, permitindo que ONGs registrem animais e que visitantes consultem esses dados e realizem solicitações de adoção.
 
 ## 🎯 Objetivo do Projeto
 
@@ -22,25 +22,23 @@ A aplicação é composta pelas seguintes telas:
 
 1. **Tela de Login**
    - **Para ONG**: Contém campos de e-mail e senha, com os botões "Entrar", "Esqueci minha senha" e "Registrar-se".
-   - **Para Adotante**: Contém campos de e-mail e senha, com os botões "Entrar", "Esqueci minha senha" e "Registrar-se".
 
-2. **Tela de Registro**
+3. **Tela de Registro**
    - **Para ONG**: Formulário para cadastro com os campos nome da ONG, CNPJ, e-mail, senha e confirmar senha. Botão "Registrar".
-   - **Para Adotante**: Formulário para cadastro com os campos nome, CPF, e-mail, senha e confirmar senha. Botão "Registrar".
 
-3. **Tela de Cadastro de Animais** (ONG apenas)
+4. **Tela de Cadastro de Animais** (ONG apenas)
    - Formulário para cadastramento de animais, incluindo campos para nome, idade, raça, espécie, descrição, status, e upload de fotos. Botão "Cadastrar".
 
-4. **Tela de Listagem de Animais**
+5. **Tela de Listagem de Animais**
    - Exibe uma lista de animais com foto, nome, raça e status. Inclui filtros para espécie, raça e idade, com botões "Ver detalhes" e "Filtrar".
 
-5. **Tela de Detalhes do Animal**
+6. **Tela de Detalhes do Animal**
    - Exibe informações detalhadas sobre o animal, incluindo fotos e descrição. Contém botões para "Solicitar Adoção" (disponível para adotantes), "Remover" e "Editar" (visíveis apenas para ONGs).
 
-6. **Tela de Solicitação de Adoção** (adotante)
+7. **Tela de Solicitação de Adoção** (adotante)
    - Modal acionado a partir da tela de detalhes do animal, contendo um formulário com campos de nome, e-mail e mensagem, além do botão "Enviar".
 
-7. **Tela de Perfil da ONG**
+8. **Tela de Perfil da ONG**
    - Lista todos os animais cadastrados pela ONG, com opções para editar ou remover cada animal. Possui botões para "Adicionar Animal", "Editar" e "Remover".
 
 ### Backlog do Produto

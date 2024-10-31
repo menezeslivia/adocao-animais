@@ -53,17 +53,6 @@ O backlog do projeto é dividido em três épicos principais, cada um com funcio
 
 3. **Adoção de Animais**: Focado em facilitar a interação dos adotantes com o sistema, permitindo que eles solicitem a adoção de animais e iniciem o contato com as ONGs.
 
-## 🌐 Estrutura de Componentes
-
-Os principais componentes do Angular são organizados para cada funcionalidade:
-
-- **LoginComponent**: Tela de login.
-- **RegisterComponent**: Tela de registro.
-- **AnimalListComponent**: Exibe a lista de animais.
-- **AnimalDetailsComponent**: Mostra detalhes do animal.
-- **AnimalFormComponent**: Formulário para cadastrar e editar.
-- **AdoptionRequestComponent**: Modal de solicitação de adoção.
-
 ## 🛠️ Como Rodar o Projeto Localmente
 
 1. Clone o repositório:

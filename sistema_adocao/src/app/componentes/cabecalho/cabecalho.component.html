@@ -4,15 +4,16 @@
   </div>
   <nav>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#encontreOSeu">Encontre o Seu</a></li>
-      <li><a href="#">Cadastre um</a></li>
-      <li><a href="#">Login</a></li>
+      <li><a routerLink="/">Home</a></li> <!-- Usando routerLink para navegação -->
+      <li><a routerLink="/sobre">Sobre</a></li> <!-- Assumindo que você tenha uma rota para 'sobre' -->
+      <li><a routerLink="/animais">Encontre o Seu</a></li> <!-- Assumindo que você tenha uma rota para 'encontreOSeu' -->
+      <li><a routerLink="/cadastreUm">Cadastre um</a></li> <!-- Adapte a rota conforme necessário -->
+      <li><a routerLink="/login">Login</a></li> <!-- Link para a página de login -->
     </ul>
   </nav>
   <div class="register-btn">
-    <a href="#" class="btn">Cadastre-se</a>
+    <a routerLink="/registro" class="btn">Cadastre-se</a> <!-- Link para a página de registro -->
   </div>
 </header>
+
 

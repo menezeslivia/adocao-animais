@@ -15,11 +15,13 @@ export class AuthService {
       id: 1,
       name: 'Test User',
       email: 'test@test.com',
-      password: '123456',
+      password: '12345678',
       cnpj: '12345678901234',
       phone: '123456789'
     });
   }
+
+
 
   register(user: User): Observable<string> {
     // Verificar se o email já existe

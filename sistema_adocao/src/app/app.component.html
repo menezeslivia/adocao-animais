@@ -7,15 +7,9 @@
         rel="stylesheet">
   </head>
   <body>
-    <app-cabecalho></app-cabecalho> 
-    <div *ngIf="isLandingPageVisible">
-      <app-main></app-main> 
-      <app-sobre></app-sobre> 
-      <app-animais></app-animais> 
-    </div>
-    
-    <router-outlet></router-outlet> <!-- Onde as rotas serão renderizadas -->
-    
+  <app-cabecalho></app-cabecalho>
+   <router-outlet></router-outlet>
+  
   </body>
 </html>
 

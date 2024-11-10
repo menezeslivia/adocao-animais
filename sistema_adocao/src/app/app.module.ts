@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
@@ -15,7 +15,7 @@ import { AuthService } from './auth/auth.service';
     ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [AuthService, AuthGuard],
-  bootstrap: [AppComponent] 
+  providers: [AuthService, AuthGuard, Router],
+
 })
 export class AppModule { }

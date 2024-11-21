@@ -1,0 +1,122 @@
+/* Container principal com flexbox para alinhar imagem e formulário lado a lado */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+}
+
+/* Imagem */
+.image-container {
+  position: relative;
+  width: 50%; /* Ajuste a largura conforme necessário */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animal-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Formulário de Registro */
+.register-container {
+  background-color: white;
+  padding: 4rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 50%;
+  margin-left: 20px; /* Espaço entre a imagem e o formulário */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.register-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    display: none; /* Esconde a imagem */
+  }
+
+  .register-container {
+    width: 100%; /* O formulário ocupa toda a largura */
+    padding: 2rem; /* Reduz o espaçamento */
+    margin: auto; /* Centraliza o formulário */
+  }
+
+  form {
+    align-items: center; /* Centraliza os campos dentro do formulário */
+  }
+
+  input,
+  button {
+    max-width: 90%; /* Reduz a largura dos campos e do botão */
+  }
+}

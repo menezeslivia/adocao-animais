@@ -61,7 +61,7 @@ O backlog do projeto é dividido em três épicos principais, cada um com funcio
    ```
 2. Navegue até a pasta do projeto:
    ```bash
-   cd adocao-animais
+   cd sistema_adocao
    ```
 3. Instale as dependências:
    ```bash

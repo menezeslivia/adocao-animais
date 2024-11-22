@@ -11,7 +11,7 @@ export const routes: Routes = [
   { path: '', component: HomeComponent }, 
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegisterComponent },
-  { path: 'novoanimal', component: CadastroAnimalComponent },
+  { path: 'novopet', component: CadastroAnimalComponent },
   
   { path: '**', redirectTo: '' } 
 ];

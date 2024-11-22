@@ -1,4 +1,8 @@
+
 <div class="container">
+  <div class="image-container">
+    <img [src]="'assets/dog4.png'" alt="Salsicha lambendo o próprio focinho." class="animal-image">
+  </div>
   <div class="register-container">
     <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
@@ -65,9 +69,5 @@
         {{ isSubmitting ? 'Registrando...' : 'Registrar' }}
       </button>
     </form>
-  </div>
-
-  <div class="image-container">
-    <img [src]="'assets/dog4.png'" alt="Salsicha lambendo o próprio focinho." class="animal-image">
   </div>
 </div>

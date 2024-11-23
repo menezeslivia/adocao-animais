@@ -12,6 +12,7 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegisterComponent },
   { path: 'novopet', component: CadastroAnimalComponent },
-  
+
+
   { path: '**', redirectTo: '' } 
 ];

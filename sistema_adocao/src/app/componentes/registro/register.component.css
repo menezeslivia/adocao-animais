@@ -1,3 +1,4 @@
+/* Layout principal */
 .container {
   display: flex;
   justify-content: flex-start;
@@ -7,6 +8,13 @@
   width: 100%;
 }
 
+.image-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .animal-image {
   align-self: flex-start;
   width: 35rem;
@@ -14,22 +22,21 @@
   padding: 0;
   margin: 0rem 20rem 0rem 0rem;
   object-fit: contain;
-  display: block; /* Add this to remove any inline behavior */
+  display: block;
 }
 
-/* Update register-container to maintain spacing without affecting image */
-.register-container {
-  flex: 0 0 30%; /* This sets the width to 30% and prevents growing/shrinking */
+.form-container {
+  flex: 0 0 50%;
   background-color: white;
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-left: 20px;
-  display: flex;
-  min-width: 300px; /* Add this to prevent container from becoming too narrow */
+  min-width: 300px;
+  margin-top: 10px;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -37,48 +44,79 @@ form {
 
 .form-group {
   margin-bottom: 1.5rem;
+  width: 100%;
 }
 
-label {
+.form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #333;
 }
 
-input {
+.form-group input {
   width: 100%;
   padding: 0.75rem 1rem;
   border: 1px solid #ddd;
   border-radius: 30px;
   font-size: 1rem;
-  transition: all 0.3s;
 }
 
-input:focus {
-  border-color: #007bff;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+.invalid {
+  border-color: #dc3545;
 }
 
-button {
-  background-color: #007bff;
+.error-text {
+  color: #dc3545;
+  font-size: 0.875rem;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.alert {
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #F1A501;
   color: white;
   border: none;
   border-radius: 30px;
   padding: 0.75rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease; 
 }
 
-button:hover {
-  background-color: #0056b3;
+.submit-button:hover {
+  background-color: #cc8d06;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.submit-button.loading {
+  opacity: 0.7;
 }
 
 .register-link {
-  margin-top: 1rem;
-  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 12px; 
 }
 
 .register-link a {
@@ -90,23 +128,32 @@ button:hover {
   text-decoration: underline;
 }
 
+h2 {
+  font-size: larger;
+  text-align: start;
+  color: #333;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: medium;
+  text-align: start;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
 @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
   .image-container {
-    display: none; /* Esconde a imagem */
+    display: none;
   }
 
-  .register-container {
-    width: 100%; /* O formulário ocupa toda a largura */
-    padding: 2rem; /* Reduz o espaçamento */
-    margin: auto; /* Centraliza o formulário */
-  }
-
-  form {
-    align-items: center; /* Centraliza os campos dentro do formulário */
-  }
-
-  input,
-  button {
-    max-width: 90%; /* Reduz a largura dos campos e do botão */
+  .form-container {
+    width: 100%;
+    margin: 0;
+    padding: 2rem;
   }
 }

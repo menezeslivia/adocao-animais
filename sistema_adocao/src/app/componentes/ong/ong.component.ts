@@ -15,6 +15,7 @@ export class OngComponent implements OnInit {
   animais: Animal[] = [];
   novoAnimal: Animal = this.resetAnimal();
   editandoId: string | null = null;
+  mostrarFormulario: boolean = false;
 
   constructor(private animalService: AnimalService) {}
 
@@ -40,6 +41,7 @@ export class OngComponent implements OnInit {
   editarAnimal(animal: Animal): void {
     this.novoAnimal = { ...animal };
     this.editandoId = animal.id;
+    this.mostrarFormulario = true;
   }
 
   excluirAnimal(id: string): void {

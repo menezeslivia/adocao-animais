@@ -1,59 +1,66 @@
 <div class="container">
     <h1>Animais Cadastrados</h1>
+
+    <!-- Botão para abrir o formulário -->
+    <button (click)="mostrarFormulario = !mostrarFormulario">
+      {{ mostrarFormulario ? 'Fechar Formulário' : 'Cadastrar Animal' }}
+    </button>
   
     <!-- Formulário para Cadastrar/Editar Animais -->
-    <form (ngSubmit)="salvarAnimal()" class="form-animal">
-      <input
-        type="text"
-        placeholder="Nome"
-        [(ngModel)]="novoAnimal.nome"
-        name="nome"
-        required
-      />
-      <input
-        type="text"
-        placeholder="Idade"
-        [(ngModel)]="novoAnimal.idade"
-        name="idade"
-        required
-      />
-      <input
-        type="text"
-        placeholder="Tipo (Ex: Gato, Cachorro)"
-        [(ngModel)]="novoAnimal.tipo"
-        name="tipo"
-        required
-      />
-      <input
-        type="text"
-        placeholder="Localização"
-        [(ngModel)]="novoAnimal.localizacao"
-        name="localizacao"
-        required
-      />
-      <input
-        type="text"
-        placeholder="(81) 9 9999-9999"
-        [(ngModel)]="novoAnimal.contato"
-        name="contato"
-        required
-      />
-      <textarea
-        placeholder="Descrição"
-        [(ngModel)]="novoAnimal.descricao"
-        name="descricao"
-        required
-      ></textarea>
-      <input
-        type="text"
-        placeholder="URL da Imagem"
-        [(ngModel)]="novoAnimal.imagemUrl"
-        name="imagemUrl"
-        required
-      />
-      <button type="submit">{{ editandoId ? 'Atualizar' : 'Cadastrar' }}</button>
-    </form>
-  
+    <div *ngIf="mostrarFormulario" class="div-form-animal">
+      <form (ngSubmit)="salvarAnimal()" class="form-animal">
+        <input
+          type="text"
+          placeholder="Nome"
+          [(ngModel)]="novoAnimal.nome"
+          name="nome"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Idade"
+          [(ngModel)]="novoAnimal.idade"
+          name="idade"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Tipo (Ex: Gato, Cachorro)"
+          [(ngModel)]="novoAnimal.tipo"
+          name="tipo"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Localização"
+          [(ngModel)]="novoAnimal.localizacao"
+          name="localizacao"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Numero de celular"
+          [(ngModel)]="novoAnimal.contato"
+          name="contato"
+          required
+        />
+        <textarea
+          placeholder="Descrição"
+          [(ngModel)]="novoAnimal.descricao"
+          name="descricao"
+          required
+        ></textarea>
+        <input
+          type="text"
+          placeholder="URL da Imagem"
+          [(ngModel)]="novoAnimal.imagemUrl"
+          name="imagemUrl"
+          required
+        />
+        <button type="submit">{{ editandoId ? 'Atualizar' : 'Cadastrar' }}</button>
+      </form>
+    </div> 
+
     <!-- Listagem de Animais em Cards -->
     <div class="animais-lista">
       <div *ngFor="let animal of animais" class="card">
@@ -68,4 +75,5 @@
         <button (click)="excluirAnimal(animal.id)">Excluir</button>
       </div>
     </div>
-  </div>
+
+</div>

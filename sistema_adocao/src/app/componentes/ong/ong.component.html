@@ -1,1 +1,63 @@
-<p>ong works!</p>
+<div class="container">
+    <h1>Animais Cadastrados</h1>
+  
+    <!-- Formulário para Cadastrar/Editar Animais -->
+    <form (ngSubmit)="salvarAnimal()" class="form-animal">
+      <input
+        type="text"
+        placeholder="Nome"
+        [(ngModel)]="novoAnimal.nome"
+        name="nome"
+        required
+      />
+      <input
+        type="text"
+        placeholder="Idade"
+        [(ngModel)]="novoAnimal.idade"
+        name="idade"
+        required
+      />
+      <input
+        type="text"
+        placeholder="Tipo (Ex: Gato, Cachorro)"
+        [(ngModel)]="novoAnimal.tipo"
+        name="tipo"
+        required
+      />
+      <input
+        type="text"
+        placeholder="Localização"
+        [(ngModel)]="novoAnimal.localizacao"
+        name="localizacao"
+        required
+      />
+      <textarea
+        placeholder="Descrição"
+        [(ngModel)]="novoAnimal.descricao"
+        name="descricao"
+        required
+      ></textarea>
+      <input
+        type="text"
+        placeholder="URL da Imagem"
+        [(ngModel)]="novoAnimal.imagemUrl"
+        name="imagemUrl"
+        required
+      />
+      <button type="submit">{{ editandoId ? 'Atualizar' : 'Cadastrar' }}</button>
+    </form>
+  
+    <!-- Listagem de Animais em Cards -->
+    <div class="animais-lista">
+      <div *ngFor="let animal of animais" class="card">
+        <img [src]="animal.imagemUrl" alt="Foto do animal" />
+        <h2>{{ animal.nome }}</h2>
+        <p><strong>Idade:</strong> {{ animal.idade }}</p>
+        <p><strong>Tipo:</strong> {{ animal.tipo }}</p>
+        <p><strong>Localização:</strong> {{ animal.localizacao }}</p>
+        <p>{{ animal.descricao }}</p>
+        <button (click)="editarAnimal(animal)">Editar</button>
+        <button (click)="excluirAnimal(animal.id)">Excluir</button>
+      </div>
+    </div>
+  </div>

@@ -8,6 +8,7 @@ import { CadastroAnimalComponent } from './componentes/cadastro-animal/cadastro-
 import { routes } from './app.routes';
 import { AuthGuard } from './auth/auth.guard';
 import { AuthService } from './auth/auth.service';
+import { AnimalService } from './services/animal.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { AuthService } from './auth/auth.service';
     CommonModule,
     RouterModule.forRoot(routes),
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard, AnimalService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

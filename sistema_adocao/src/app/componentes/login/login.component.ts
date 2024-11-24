@@ -38,7 +38,7 @@ export class LoginComponent implements OnInit {
       this.authService.login(email, password).subscribe({
         next: (response) => {
           console.log('Login bem-sucedido:', response);
-          this.router.navigate(['/dashboard']);
+          this.router.navigate(['/home']);
         },
         error: (error) => {
           console.error('Erro no login:', error);

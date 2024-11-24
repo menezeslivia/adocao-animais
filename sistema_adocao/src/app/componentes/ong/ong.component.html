@@ -31,6 +31,13 @@
         name="localizacao"
         required
       />
+      <input
+        type="text"
+        placeholder="(81) 9 9999-9999"
+        [(ngModel)]="novoAnimal.contato"
+        name="contato"
+        required
+      />
       <textarea
         placeholder="Descrição"
         [(ngModel)]="novoAnimal.descricao"
@@ -55,6 +62,7 @@
         <p><strong>Idade:</strong> {{ animal.idade }}</p>
         <p><strong>Tipo:</strong> {{ animal.tipo }}</p>
         <p><strong>Localização:</strong> {{ animal.localizacao }}</p>
+        <p><strong>Contato:</strong> {{ animal.contato }}</p>
         <p>{{ animal.descricao }}</p>
         <button (click)="editarAnimal(animal)">Editar</button>
         <button (click)="excluirAnimal(animal.id)">Excluir</button>

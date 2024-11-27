@@ -115,22 +115,55 @@ body {
   background-color: #ab4e3c;
 }
 
-
-
-/* Responsividade */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none; /* Ocultar as opções de navegação em telas pequenas */
-  }
-  .navbar {
-    flex-direction: column;
-  }
-  .register-btn {
-    margin-top: 10px;
-  }
+.hamburger {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  padding: 10px; /* Adjust padding as needed */
 }
-@media (min-width: 769px) {
-  .nav-links {
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger on smaller screens */
+  }
+
+  .nav-links,
+  .nav-links-ong {
+    display: none;
+    position: relative; /* Define a posição como relativa */
+    margin-top: 70px; /* Ajuste conforme a altura do cabeçalho + margem desejada */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 999; /* Garante que o menu fique abaixo do cabeçalho */
+  }
+
+  .nav-links.open, /* Show when menu is open */
+  .nav-links-ong.open {
     display: flex;
+  }
+
+  .nav-links li, /* Style navigation items for mobile */
+  .nav-links-ong li {
+    margin: 10px 0;
+  }
+
+  .nav-links li a, /* Style navigation links for mobile */
+  .nav-links-ong li a {
+    display: block;
+    padding: 10px;
+  }
+
+  .register-btn {
+    margin-top: 10px; /* Adjust spacing as needed */
   }
 }

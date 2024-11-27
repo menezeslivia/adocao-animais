@@ -13,6 +13,7 @@
     gap: 7rem;
     align-items: center;
   }
+
   .main-text {
     max-width: 600px;
     margin-left: 150px;
@@ -43,7 +44,6 @@
   }
 
   .main-image {
-
     img {
       max-width: 35rem;
       border-radius: 10px;
@@ -53,19 +53,51 @@
       justify-content: flex-end;
     }
   }
+} 
 
-  @media (max-width: 768px) {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; 
+    padding: 1rem 2rem; 
+  }
 
-    .container {
-      flex-direction: column;
+  .main .container {
+    display: flex; 
+    flex-direction: row; /* Arrange items in a row */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    gap: 2rem; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main .main-text {
+    margin-left: 0; 
+    max-width: 100%; /* Make text take full width if needed */
+    
+    h2 {
+      font-size: 2rem;
     }
 
-    .main-text {
-      h2 {
-        font-size: 2rem;
-      }
+    p {
+      font-size: 1rem;
     }
+  }
+
+  .main .main-image {
+    display: none; /* Hide the image container */
+
+  }
+  
+  .main .main-buttons {
+    flex-direction: row; /* Arrange buttons horizontally */
+    align-items: center;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .main .main-buttons app-button {
+    width: auto; /* Allow buttons to take their natural width */
   }
 }

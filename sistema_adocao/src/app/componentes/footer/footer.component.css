@@ -67,8 +67,25 @@
     .footer {
         padding: 50px 0 20px;
     }
-    
+
+    .footer .row {
+        flex-direction: column; /* Stack columns vertically */
+        text-align: center; /* Center text */
+    }
+
+    .footer .col-lg-4, 
+    .footer .col-lg-2, 
+    .footer .col-lg-3 {
+        flex: 0 0 100%; /* Make columns take full width */
+        max-width: 100%;
+        margin-bottom: 20px; /* Add spacing between columns */
+    }
+
     .footer h5 {
         margin-top: 20px;
+    }
+
+    .footer .social-links {
+        justify-content: center; /* Center social links */
     }
 }

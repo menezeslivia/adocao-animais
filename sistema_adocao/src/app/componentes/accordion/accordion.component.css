@@ -121,7 +121,34 @@ p {
 }
 
 @media (max-width: 768px) {
+    .faq-container {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .faq-title h2 {
+        font-size: 1.2rem; /* Reduce heading size */
+    }
+
+    .faq-title p {
+        font-size: 0.9rem; /* Reduce paragraph size */
+    }
+
     .accordion-container {
-        padding: 40px 20px;
+        margin: 0; /* Remove margin */
+        padding: 20px; /* Adjust padding */
+        border-radius: 8px; /* Reduce border-radius */
+    }
+
+    .accordion-item {
+        padding: 20px 10px; /* Adjust padding */
+    }
+
+    .accordion-button {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .accordion-body {
+        padding: 10px; /* Adjust padding */
+        font-size: 12px; /* Reduce font size */
     }
 }

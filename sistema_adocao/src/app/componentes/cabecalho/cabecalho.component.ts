@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -12,6 +13,7 @@ import { Router } from '@angular/router';
 })
 export class CabecalhoComponent implements OnInit {
   rotaAtual: string = '';
+  isMenuOpen = false; // Add this line to declare the isMenuOpen property
 
   constructor(private router: Router) {}
 
@@ -30,5 +32,8 @@ export class CabecalhoComponent implements OnInit {
   isOngPage(): boolean {
     return this.rotaAtual === '/home';
   }
-  
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }

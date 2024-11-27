@@ -7,6 +7,7 @@
   align-items: center;
   position: relative; /* Necessário para posicionar o gato dentro desse container */
   overflow: hidden; /* Garante que nenhum elemento "vaze" do container */
+  height: 45rem;
 }
 
 .text-section {
@@ -29,16 +30,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%; /* Limita a largura da seção */
+   /* Limita a largura da seção */
   margin: 0 auto; /* Centraliza horizontalmente */
   position: relative;
   z-index: 2; /* Garante que o conteúdo fique acima do gato */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cycle-image {
   max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
   width: 100%; /* Ajusta automaticamente com base no limite da content-section */
 }
 

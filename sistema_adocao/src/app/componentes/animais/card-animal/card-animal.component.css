@@ -28,6 +28,10 @@
   color: #555;
 }
 
+.custom-badge h4 {
+  color: black !important; 
+}
+
 .custom-badge {
     border: 1px solid rgba(223, 105, 81, 0.3);
     border-radius: 20px;

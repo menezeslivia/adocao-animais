@@ -56,12 +56,25 @@
 }
 
 @media only screen and (max-width: 1280px) {
+  .how-we-work {
+    height: 20rem;
+  }
+
   .content-section {
-    flex-direction: column;
-    width: 80%; /* Ajusta a largura para telas menores */
+    background-color: transparent; /* Make background transparent */
+    border-radius: 0; /* Remove border-radius */
+    box-shadow: none; /* Remove box-shadow */
+    height: 10rem;
+  } 
+
+  .cycle-image { 
+    display: block; /* Ensure cycle-image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    width: 100%; /* Make sure the image doesn't overflow */
+    /* Add any other desired styles for cycle-image here */
   }
 
   .cat-image {
-    display: none; /* Esconde o gato em telas menores */
+    display: none; /* Hide the cat image on smaller screens */
   }
 }

@@ -27,21 +27,9 @@
   <div class="logo">
     <h1>Petzo</h1>
   </div>
-  <nav>
-    <ul class="nav-links-ong" [ngClass]="{ 'open': isMenuOpen }"> 
-      <li><a href="#">Seus animais</a></li>
-      <li><a href="#">Cadastre um</a></li>
-      <p>Olá, ONG</p>
-    </ul>
-  </nav>
+
   <div class="desconectar-btn">
     <a routerLink="/" class="btn">Desconectar</a>
   </div>
 
-  <!-- Hamburger icon -->
-  <div class="hamburger" (click)="toggleMenu()">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
 </header>

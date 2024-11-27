@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  position: relative; /* Necessário para posicionar o gato dentro desse container */
+  overflow: hidden; /* Garante que nenhum elemento "vaze" do container */
 }
 
 .text-section {
@@ -28,33 +29,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%; /* Limita a largura da seção */
+  margin: 0 auto; /* Centraliza horizontalmente */
   position: relative;
+  z-index: 2; /* Garante que o conteúdo fique acima do gato */
 }
 
 .cycle-image {
   max-width: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  width: 100%; /* Ajusta automaticamente com base no limite da content-section */
 }
 
 .cat-image {
   position: absolute;
-  right: -48%;
-  bottom: 0;
-  max-width: 300px;
-  width: 50%;
-  display: block;
+  right: 0; /* Fica colado à borda direita */
+  bottom: 0; /* Fica colado ao fundo da seção */
+  max-width: 22rem;
+  width: 80%; /* Ajusta responsivamente */
+  z-index: 1; /* Coloca o gato atrás do content-section */
+  pointer-events: none; /* Impede que o gato interfira na interação do conteúdo */
 }
 
 @media only screen and (max-width: 1280px) {
   .content-section {
     flex-direction: column;
+    width: 80%; /* Ajusta a largura para telas menores */
   }
 
   .cat-image {
-    display: none;
+    display: none; /* Esconde o gato em telas menores */
   }
-
 }
-

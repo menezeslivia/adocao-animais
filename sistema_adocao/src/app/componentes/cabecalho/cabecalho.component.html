@@ -1,4 +1,6 @@
-<header class="navbar">
+<!-- HTML DA GERAL -->
+
+<header class="navbar" *ngIf="isHomePage()">
   <div class="logo">
     <h1>Petzo</h1>
   </div>
@@ -16,4 +18,21 @@
   </div>
 </header>
 
+<!-- HTML DA ONG -->
+
+<header class="navbar-ong" *ngIf="isOngPage()">
+  <div class="logo">
+    <h1>Petzo</h1>
+  </div>
+ <nav>
+    <ul class="nav-links-ong">
+      <li><a href="#">Seus animais</a></li>
+      <li><a href="#">Cadastre um</a></li>
+      <p>Olá, ONG</p>
+    </ul>
+  </nav>
+  <div class="desconectar-btn">
+    <a routerLink="/" class="btn">Desconectar</a>  <!-- Volta pra homepage normal -->
+  </div>
+</header>
 

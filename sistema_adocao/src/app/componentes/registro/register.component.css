@@ -1,3 +1,4 @@
+/* Layout principal */
 .container {
   display: flex;
   justify-content: flex-start;
@@ -27,12 +28,12 @@
 .form-container {
   flex: 0 0 50%;
   background-color: white;
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-left: 20px;
-  margin-top: 60px; /* Espaço entre o topo da página e o form */
   min-width: 300px;
+  margin-top: 10px;
 }
 
 .form {
@@ -88,7 +89,7 @@
 
 .submit-button {
   width: 100%;
-  background-color: #007bff;
+  background-color: #F1A501;
   color: white;
   border: none;
   border-radius: 30px;
@@ -96,6 +97,11 @@
   font-size: 1rem;
   cursor: pointer;
   margin-top: 1rem;
+  transition: background-color 0.3s ease; 
+}
+
+.submit-button:hover {
+  background-color: #cc8d06;
 }
 
 .submit-button:disabled {
@@ -123,19 +129,18 @@
 }
 
 h2 {
-  font-size: 25px;
+  font-size: larger;
   text-align: start;
   color: #333;
   font-weight: bold;
 }
 
 h4 {
-  font-size: 15px;
+  font-size: medium;
   text-align: start;
   margin-bottom: 2rem;
   color: #333;
 }
-
 
 @media (max-width: 768px) {
   .container {

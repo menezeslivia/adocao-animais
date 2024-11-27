@@ -11,10 +11,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './register.component.html',
-  styles: [`
-    .error-message { color: red; margin: 10px 0; }
-    .success-message { color: green; margin: 10px 0; }
-  `]
+  styleUrl: './register.component.css',
 })
 export class RegisterComponent {
   registerForm: FormGroup;

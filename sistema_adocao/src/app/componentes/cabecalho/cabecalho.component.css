@@ -13,29 +13,52 @@ body {
   align-items: center;
   padding: 10px 20px;
   background-color: #fff;
+  position: fixed; /* Make navbar stay at top */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
-.logo h1 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
-}
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-.nav-links li {
-  a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
 
-    &:hover {
-      color: #ff6b6b;
-    }
-  }
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
 }
+
+/* Add these new styles */
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li a:active {
+  color: #ff6b6b;
+  outline: none;
+  opacity: 1;
+}
+
+/* Override any Bootstrap or framework styles that might interfere */
+.nav-links li a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.nav-links li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ff6b6b;
+  transition: width .3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
 .register-btn .btn {
   background-color: #faae2b;
   padding: 8px 12px;

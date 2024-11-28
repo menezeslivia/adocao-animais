@@ -1,13 +1,9 @@
 
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cabecalho',
-  standalone: true,
-  imports: [RouterModule, CommonModule],
   templateUrl: './cabecalho.component.html',
   styleUrl: './cabecalho.component.css'
 })

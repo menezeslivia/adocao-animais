@@ -1,13 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 import { AnimalService } from '../../services/animal.service';
 import { Animal } from '../../models/animal.model';
 
 @Component({
   selector: 'app-ong',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
   templateUrl: './ong.component.html',
   styleUrls: ['./ong.component.css'],
 })

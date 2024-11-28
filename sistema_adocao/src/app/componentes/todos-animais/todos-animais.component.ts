@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-     import { CommonModule } from '@angular/common'; // Import CommonModule
-     import { AnimalService } from '../../services/animal.service';
-     import { Animal } from '../../models/animal.model';
+import { AnimalService } from '../../services/animal.service';
+import { Animal } from '../../models/animal.model';
 
-     @Component({
-       selector: 'app-todos-animais',
-       standalone: true,
-       imports: [CommonModule], // Add CommonModule to imports array
-       templateUrl: './todos-animais.component.html',
-       styleUrl: './todos-animais.component.css'
-     })
+@Component({
+  selector: 'app-todos-animais',
+  templateUrl: './todos-animais.component.html',
+  styleUrl: './todos-animais.component.css'
+ })
+ 
 export class TodosAnimaisComponent implements OnInit {
   animais: Animal[] = []; 
 

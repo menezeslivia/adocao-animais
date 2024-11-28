@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {CardAnimalComponent} from './card-animal/card-animal.component';
 
 @Component({
   selector: 'app-animais',
-  standalone: true,
-  imports: [CommonModule, CardAnimalComponent],
   templateUrl: './animais.component.html',
   styleUrl: './animais.component.css'
 })

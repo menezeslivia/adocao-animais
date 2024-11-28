@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './componentes/main/main.component';
 import { HomeComponent } from './componentes/home/home/home.component';
 import { OngComponent } from './componentes/ong/ong.component'
+import { TodosAnimaisComponent } from './componentes/todos-animais/todos-animais.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent }, 
@@ -14,6 +15,7 @@ export const routes: Routes = [
   { path: 'registro', component: RegisterComponent },
   { path: 'novopet', component: CadastroAnimalComponent },
   { path: 'home', component: OngComponent },
+  { path: 'allanimais', component: TodosAnimaisComponent},
 
   { path: '**', redirectTo: '' } 
 ];

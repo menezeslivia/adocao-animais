@@ -25,6 +25,7 @@ import { Component, OnInit } from '@angular/core';
 import { LoginComponent } from './componentes/login/login.component';
 import { OngComponent } from './componentes/ong/ong.component';
 import { RegisterComponent } from './componentes/registro/register.component';
+import { TodosAnimaisComponent } from './componentes/todos-animais/todos-animais.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { RegisterComponent } from './componentes/registro/register.component';
     LoginComponent,
     OngComponent,
     RegisterComponent,
+    TodosAnimaisComponent,
   ],
   imports: [
     BrowserModule,

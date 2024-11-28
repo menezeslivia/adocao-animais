@@ -25,10 +25,6 @@ export class CabecalhoComponent implements OnInit {
   }
 
   // Verifica se a rota corresponde a uma específica
-  isHomePage(): boolean {
-    return this.rotaAtual === '/';
-  }
-
   isOngPage(): boolean {
     return this.rotaAtual === '/home';
   }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms'; // Certifique-se de que este está importado
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // Certifique-se de que este está importado
 import { RouterModule, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
@@ -22,7 +22,9 @@ import { CardAnimalComponent } from './componentes/animais/card-animal/card-anim
 import { Input } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-
+import { LoginComponent } from './componentes/login/login.component';
+import { OngComponent } from './componentes/ong/ong.component';
+import { RegisterComponent } from './componentes/registro/register.component';
 
 @NgModule({
   declarations: [
@@ -39,18 +41,16 @@ import { Component, OnInit } from '@angular/core';
     AuthLayoutComponent,
     AnimaisComponent,
     AccordionComponent,
+    LoginComponent,
+    OngComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ReactiveFormsModule, // Inclua este módulo aqui
     CommonModule,
     RouterModule.forRoot(routes),
-    Router, 
-    Input, 
-    FormBuilder,
-    FormGroup,
-    Component,
-    Validators
   ],
   providers: [AuthService, AuthGuard, AnimalService],
   bootstrap: [AppComponent],

@@ -29,7 +29,7 @@ A aplicação é composta pelas seguintes telas:
    1.2 **FAQ**
    - Sessão com as perguntas frequentes sobre o site e como realizar as adoções, como registrar e outras dúvidas.
   
-   1.3 **Explicação sobre como funciona a dinâmica do site"
+   1.3 **Explicação sobre como funciona a dinâmica do site"**
    - Explica de forma simplificada para as ongs e adotantes como podem realizar as atividades no site.
 
 2. **Tela de Login**
